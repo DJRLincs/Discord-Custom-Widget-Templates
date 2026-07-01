@@ -27,6 +27,6 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_APP_ID: ${{ secrets.DISCORD_APP_ID }}
           DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
-          CONFIG_PATH: config.example.json
+          CONFIG_PATH: ${{ vars.WIDGET_CONFIG_PATH || 'configs/live-example.example.json' }}
         run: |
           python sync_widget.py

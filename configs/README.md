@@ -6,6 +6,26 @@ The `configs/*.example.json` files are the ones intended to be committed.
 Create a local copy without the `.example` suffix if you want to test or run
 personal values that should stay private.
 
+## Config keys vs GitHub secrets
+
+These are intentionally different types of names:
+
+- Config keys are JSON paths used by the script.
+- GitHub secrets are environment variable names injected at runtime.
+
+Mapping used by the sync script:
+
+- `discord.app_id` -> `DISCORD_APP_ID`
+- `discord.user_id` -> `DISCORD_USER_ID`
+- `discord.bot_token_env` -> points to the token env var name (default `DISCORD_BOT_TOKEN`)
+
+Runtime priority:
+
+1. Environment variables from GitHub Actions secrets
+2. Values in the config file
+
+This lets one committed example config work for local testing and Actions without storing secrets in Git.
+
 Use one of these approaches:
 
 1. Local run:

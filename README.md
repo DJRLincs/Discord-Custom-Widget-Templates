@@ -92,6 +92,11 @@ No labels, text, or image values are hard-coded in the templates.
 The script publishes values from widget.dynamic in config.example.json.
 Use type 1 for text, type 2 for number, and type 3 for image.
 
+Config keys and GitHub secret names are not identical on purpose.
+The script reads JSON keys like `discord.app_id` and `discord.user_id`, then
+overrides them from Actions env vars/secrets when present (`DISCORD_APP_ID`,
+`DISCORD_USER_ID`, `DISCORD_BOT_TOKEN`).
+
 Example:
 
 ```json
