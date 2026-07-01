@@ -27,7 +27,7 @@
       { "type": 1, "name": "stat_6_value", "value": "Live" },
       { "type": 1, "name": "mini_label", "value": "Widget Repo" },
       { "type": 1, "name": "mini_text", "value": "Live Example" },
-      { "type": 3, "name": "top_image_url", "value": { "url": "https://example.com/profile-header.png" } },
+      { "type": 3, "name": "top_image_url", "value": { "url": "https://i.nuuls.com/TUKq4.png" } },
       { "type": 3, "name": "mini_icon_url", "value": { "url": "https://example.com/mini-icon.png" } },
       { "type": 3, "name": "mini_image_url", "value": { "url": "https://example.com/mini-image.png" } }
     ]
