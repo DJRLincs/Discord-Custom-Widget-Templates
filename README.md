@@ -10,8 +10,7 @@ This template is intentionally not tied to GitHub stats.
 
 ## References
 
-- TheCreativeGod JSON import extension:
-  https://github.com/TheCreativeGod/Discord-Widgets-Extension
+- TheCreativeGod Discord widget extension: [TheCreativeGod/Discord-Widgets-Extension](https://github.com/TheCreativeGod/Discord-Widgets-Extension)
 - Discord widgets documentation:
   https://docs.discord.food/resources/widgets
 

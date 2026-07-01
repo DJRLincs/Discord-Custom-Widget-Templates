@@ -7,7 +7,7 @@ Use this checklist before running the sync workflow.
 You can import the template JSON with either option:
 
 - The extension in `Discord-Widgets-Extension-main`
-- TheCreativeGod extension: https://github.com/TheCreativeGod/Discord-Widgets-Extension
+- TheCreativeGod extension: [TheCreativeGod/Discord-Widgets-Extension](https://github.com/TheCreativeGod/Discord-Widgets-Extension)
 
 ## 1) Create or open your Discord application
 
