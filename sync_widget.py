@@ -276,6 +276,24 @@ def patch_discord_widget(config: dict, payload: dict) -> tuple[bool, int, str]:
         return False, 0, str(error)
 
 
+def auth_diagnostics(config: dict) -> str:
+    discord = config.get("discord", {})
+    app_id_env = str(discord.get("app_id_env", "DISCORD_APP_ID")).strip() or "DISCORD_APP_ID"
+    user_id_env = str(discord.get("user_id_env", "DISCORD_USER_ID")).strip() or "DISCORD_USER_ID"
+    token_env = str(discord.get("bot_token_env", "DISCORD_BOT_TOKEN")).strip() or "DISCORD_BOT_TOKEN"
+
+    app_id_val = os.getenv(app_id_env, "").strip() or str(discord.get("app_id", "")).strip()
+    user_id_val = os.getenv(user_id_env, "").strip() or str(discord.get("user_id", "")).strip()
+    token_val = os.getenv(token_env, "").strip()
+
+    return (
+        "Auth diagnostics: "
+        f"app_id_env={app_id_env} app_id_len={len(app_id_val)} "
+        f"user_id_env={user_id_env} user_id_len={len(user_id_val)} "
+        f"token_env={token_env} token_len={len(token_val)}"
+    )
+
+
 def main() -> int:
     base_dir = Path(__file__).resolve().parent
     config_name = os.getenv("CONFIG_PATH", "config.example.json")
@@ -296,6 +314,13 @@ def main() -> int:
         return 0
 
     print(f"Widget sync failed status={status} body={body}")
+    if status == 403 and '"code": 50025' in body:
+        print(auth_diagnostics(config))
+        print(
+            "Discord rejected the token as invalid OAuth2 access token. "
+            "Verify this is a Bot token from Developer Portal > Bot > Reset Token, "
+            "and that it belongs to the app id used by this config."
+        )
     return 2
 
 
