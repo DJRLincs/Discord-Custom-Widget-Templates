@@ -26,7 +26,7 @@
       { "type": 1, "name": "stat_6_label", "value": "Mode" },
       { "type": 1, "name": "stat_6_value", "value": "Live" },
       { "type": 1, "name": "mini_label", "value": "Custom Discord" },
-      { "type": 1, "name": "mini_text", "value": "Widget" },
+      { "type": 1, "name": "mini_text", "value": "Widgets" },
       { "type": 3, "name": "top_image_url", "value": { "url": "https://i.nuuls.com/TUKq4.png" } },
       { "type": 3, "name": "mini_icon_url", "value": { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png" } },
       { "type": 3, "name": "mini_image_url", "value": { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/960px-GitHub_Invertocat_Logo.svg.png" } }
