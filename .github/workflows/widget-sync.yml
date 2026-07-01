@@ -47,6 +47,44 @@ jobs:
         run: |
           python -m pip install --upgrade pip
 
+      - name: Preflight work widget token and app id
+        env:
+          WORK_WIDGET_DISCORD_BOT_TOKEN: ${{ secrets.WORK_WIDGET_DISCORD_BOT_TOKEN }}
+          WORK_WIDGET_DISCORD_APP_ID: ${{ secrets.WORK_WIDGET_DISCORD_APP_ID }}
+          WORK_WIDGET_DISCORD_USER_ID: ${{ secrets.WORK_WIDGET_DISCORD_USER_ID }}
+          CONFIG_PATH: configs/work-progress-bst.example.json
+        run: |
+          python - <<'PY'
+          import base64
+          import os
+          import sys
+
+          token = os.getenv("WORK_WIDGET_DISCORD_BOT_TOKEN", "").strip()
+          app_id = os.getenv("WORK_WIDGET_DISCORD_APP_ID", "").strip()
+
+          if not token:
+              print("Preflight failed: WORK_WIDGET_DISCORD_BOT_TOKEN is empty")
+              sys.exit(2)
+          if not app_id:
+              print("Preflight failed: WORK_WIDGET_DISCORD_APP_ID is empty")
+              sys.exit(2)
+
+          part = token.split(".", 1)[0]
+          pad = "=" * ((4 - len(part) % 4) % 4)
+          try:
+              bot_id = base64.urlsafe_b64decode(part + pad).decode("utf-8")
+          except Exception:
+              print("Preflight failed: token does not look like a Discord bot token")
+              sys.exit(2)
+
+          print(f"Preflight: app_id_len={len(app_id)} bot_id_len={len(bot_id)}")
+          if bot_id != app_id:
+              print("Preflight failed: token bot id does not match WORK_WIDGET_DISCORD_APP_ID")
+              sys.exit(2)
+
+          print("Preflight passed: token bot id matches app id")
+          PY
+
       - name: Sync work progress widget profile
         env:
           WORK_WIDGET_DISCORD_BOT_TOKEN: ${{ secrets.WORK_WIDGET_DISCORD_BOT_TOKEN }}
