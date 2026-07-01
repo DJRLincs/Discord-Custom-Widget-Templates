@@ -77,12 +77,12 @@
         },
         "progress": {
           "fields": {
-            "current_value": {
+            "current": {
               "presentation_type": "number",
               "value_type": "data",
               "value": "progress_current_value"
             },
-            "max_value": {
+            "max": {
               "presentation_type": "number",
               "value_type": "data",
               "value": "progress_max_value"
