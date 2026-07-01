@@ -1,0 +1,18 @@
+{
+  "discord": {
+    "app_id": "YOUR_DISCORD_APP_ID",
+    "user_id": "YOUR_DISCORD_USER_ID",
+    "bot_token_env": "DISCORD_BOT_TOKEN",
+    "identity_id": 0
+  },
+  "widget": {
+    "display_name": "Mini Profile Contained Stat",
+    "sync_timezone_label": "UTC",
+    "dynamic": [
+      { "type": 1, "name": "mini_label", "value": "Profile" },
+      { "type": 1, "name": "mini_text", "value": "View stats" },
+      { "type": 3, "name": "mini_icon_url", "value": { "url": "https://example.com/mini-icon.png" } },
+      { "type": 3, "name": "mini_image_url", "value": { "url": "https://example.com/mini-image.png" } }
+    ]
+  }
+}

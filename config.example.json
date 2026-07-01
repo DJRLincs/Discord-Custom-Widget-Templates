@@ -1,0 +1,37 @@
+{
+  "discord": {
+    "app_id": "YOUR_DISCORD_APP_ID",
+    "user_id": "YOUR_DISCORD_USER_ID",
+    "bot_token_env": "DISCORD_BOT_TOKEN",
+    "identity_id": 0
+  },
+  "widget": {
+    "display_name": "Custom Widget",
+    "sync_timezone_label": "UTC",
+    "dynamic": [
+      { "type": 1, "name": "top_title", "value": "My Widget" },
+      { "type": 1, "name": "top_subtitle_1", "value": "Subtitle line 1" },
+      { "type": 1, "name": "top_subtitle_2", "value": "Subtitle line 2" },
+      { "type": 1, "name": "top_subtitle_3", "value": "Subtitle line 3" },
+
+      { "type": 1, "name": "stat_1_label", "value": "Stat 1" },
+      { "type": 1, "name": "stat_1_value", "value": "100" },
+      { "type": 1, "name": "stat_2_label", "value": "Stat 2" },
+      { "type": 1, "name": "stat_2_value", "value": "200" },
+      { "type": 1, "name": "stat_3_label", "value": "Stat 3" },
+      { "type": 1, "name": "stat_3_value", "value": "300" },
+      { "type": 1, "name": "stat_4_label", "value": "Stat 4" },
+      { "type": 1, "name": "stat_4_value", "value": "400" },
+      { "type": 1, "name": "stat_5_label", "value": "Stat 5" },
+      { "type": 1, "name": "stat_5_value", "value": "500" },
+      { "type": 1, "name": "stat_6_label", "value": "Stat 6" },
+      { "type": 1, "name": "stat_6_value", "value": "600" },
+
+      { "type": 1, "name": "progress_label", "value": "Goal" },
+      { "type": 1, "name": "progress_text", "value": "3 of 10 complete" },
+
+      { "type": 3, "name": "top_image_url", "value": { "url": "https://example.com/top.png" } },
+      { "type": 3, "name": "progress_icon_url", "value": { "url": "https://example.com/icon.png" } }
+    ]
+  }
+}

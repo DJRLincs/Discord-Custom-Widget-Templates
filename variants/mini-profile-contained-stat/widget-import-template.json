@@ -1,0 +1,40 @@
+{
+  "_type": "discord-widget",
+  "version": 1,
+  "display_name": "Template - Mini Profile Contained Stat",
+  "surfaces": {
+    "mini_profile": {
+      "layout": "mini_profile_contained_stat",
+      "components": {
+        "stat": {
+          "fields": {
+            "label": {
+              "presentation_type": "text",
+              "value_type": "data",
+              "value": "mini_label"
+            },
+            "text": {
+              "presentation_type": "text",
+              "value_type": "data",
+              "value": "mini_text"
+            },
+            "icon": {
+              "presentation_type": "image",
+              "value_type": "data",
+              "value": "mini_icon_url"
+            }
+          }
+        },
+        "hero_image": {
+          "fields": {
+            "image": {
+              "presentation_type": "image",
+              "value_type": "data",
+              "value": "mini_image_url"
+            }
+          }
+        }
+      }
+    }
+  }
+}
