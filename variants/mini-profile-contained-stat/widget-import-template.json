@@ -25,7 +25,7 @@
             }
           }
         },
-        "hero_image": {
+        "contained_image": {
           "fields": {
             "image": {
               "presentation_type": "image",
