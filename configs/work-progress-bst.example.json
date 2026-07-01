@@ -22,18 +22,14 @@
     "dynamic": [
       { "type": 1, "name": "top_title", "value": "Work Status" },
       { "type": 1, "name": "top_subtitle_1", "value": "{{work_status}}" },
-      { "type": 1, "name": "top_subtitle_2", "value": "Shift: <t:{{work_unix_start}}:t> - <t:{{work_unix_end}}:t>" },
-      { "type": 1, "name": "top_subtitle_3", "value": "Mon-Fri BST | <t:{{unix_now}}:R>" },
+      { "type": 1, "name": "top_subtitle_2", "value": "Mon-Fri 08:00-18:00 BST" },
+      { "type": 1, "name": "top_subtitle_3", "value": "Local time {{work_local_now}}" },
       { "type": 1, "name": "objective_name", "value": "Workday Progress" },
-      { "type": 1, "name": "objective_description", "value": "{{work_progress_bar}} {{work_progress_percent}}%" },
+      { "type": 1, "name": "objective_description", "value": "{{work_status}}" },
       { "type": 2, "name": "progress_current_value", "value": 0 },
       { "type": 2, "name": "progress_max_value", "value": 100 },
       { "type": 3, "name": "objective_image_url", "value": { "url": "https://example.com/icon.png" } },
-      { "type": 2, "name": "work_progress_percent", "value": 0 },
-      { "type": 1, "name": "work_unix_start", "value": "{{work_unix_start}}" },
-      { "type": 1, "name": "work_unix_end", "value": "{{work_unix_end}}" },
-      { "type": 1, "name": "work_unix_next_start", "value": "{{work_unix_next_start}}" },
-      { "type": 1, "name": "work_unix_next_end", "value": "{{work_unix_next_end}}" }
+      { "type": 2, "name": "work_progress_percent", "value": 0 }
     ]
   }
 }
