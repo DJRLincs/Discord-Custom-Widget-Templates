@@ -28,7 +28,7 @@
       { "type": 1, "name": "objective_description", "value": "{{work_status}}" },
       { "type": 2, "name": "progress_current_value", "value": 0 },
       { "type": 2, "name": "progress_max_value", "value": 100 },
-      { "type": 3, "name": "objective_image_url", "value": { "url": "https://example.com/icon.png" } },
+      { "type": 3, "name": "objective_image_url", "value": { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/AnalogClockAnimation1_2hands_1h_in_6sec.gif/250px-AnalogClockAnimation1_2hands_1h_in_6sec.gif" } },
       { "type": 2, "name": "work_progress_percent", "value": 0 }
     ]
   }
