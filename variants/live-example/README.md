@@ -13,6 +13,7 @@ Use this as:
 - widget_top_hero
 - widget_bottom_stats
 - add_widget_preview_hero
+- mini_profile_contained_stat
 
 ## What to edit
 
@@ -25,5 +26,9 @@ All visible content is driven by dynamic keys in the matching config example:
 - stat_1_label through stat_6_label
 - stat_1_value through stat_6_value
 - top_image_url
+- mini_label
+- mini_text
+- mini_icon_url
+- mini_image_url
 
 Nothing in the template is hard-coded as a final value.
