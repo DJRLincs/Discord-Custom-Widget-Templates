@@ -45,7 +45,7 @@ Mini profile variants:
 ## Quick start
 
 1. Fork or clone this folder as a new GitHub repository.
-2. Import one variant JSON template into your widget app.
+2. Import one variant JSON template into the Discord widget editor using the extension.
 3. Edit config.example.json and set your dynamic fields.
 4. Add repository secrets:
    - DISCORD_BOT_TOKEN

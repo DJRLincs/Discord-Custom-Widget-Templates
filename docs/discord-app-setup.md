@@ -12,7 +12,7 @@ You can import the template JSON with either option:
 ## 1) Create or open your Discord application
 
 1. Open Discord Developer Portal.
-2. Create a new application or open your existing widget application.
+2. Create a new application or open your existing Discord application.
 3. Copy the Application ID and store it as your `DISCORD_APP_ID` secret.
 
 ## 2) Configure required General Information values
@@ -54,4 +54,4 @@ In your repository settings, add these Actions secrets:
 
 ## 7) Publish the widget
 
-After importing your JSON template and setting fields, publish the widget in the Developer Portal. If not published, other users may not see updates.
+After importing your JSON template through the extension and setting fields, publish the widget in the Developer Portal. If not published, other users may not see updates.
