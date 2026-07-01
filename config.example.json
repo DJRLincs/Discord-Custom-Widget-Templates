@@ -1,7 +1,9 @@
 {
   "discord": {
     "app_id": "DISCORD_APP_ID",
+    "app_id_env": "DISCORD_APP_ID",
     "user_id": "DISCORD_USER_ID",
+    "user_id_env": "DISCORD_USER_ID",
     "bot_token_env": "DISCORD_BOT_TOKEN",
     "identity_id": 0
   },

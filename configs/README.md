@@ -15,8 +15,8 @@ These are intentionally different types of names:
 
 Mapping used by the sync script:
 
-- `discord.app_id` -> `DISCORD_APP_ID`
-- `discord.user_id` -> `DISCORD_USER_ID`
+- `discord.app_id_env` -> app id env var name (default `DISCORD_APP_ID`)
+- `discord.user_id_env` -> user id env var name (default `DISCORD_USER_ID`)
 - `discord.bot_token_env` -> points to the token env var name (default `DISCORD_BOT_TOKEN`)
 
 Runtime priority:
@@ -50,5 +50,29 @@ Use one of these approaches:
 ## Example profile widget
 
 - `configs/live-example.example.json`
+- `configs/work-progress-bst.example.json` (Mon-Fri 08:00-18:00 Europe/London work progress)
+
+## Runtime placeholders
+
+The sync script can inject runtime placeholders into type 1 text values using
+`{{token_name}}`.
+
+Supported base tokens:
+
+- `{{unix_now}}`
+- `{{now_utc_iso}}`
+
+When `widget.work_schedule` is configured, these are also available:
+
+- `{{work_timezone}}`
+- `{{work_status}}`
+- `{{work_progress_percent}}`
+- `{{work_progress_bar}}`
+- `{{work_progress_text}}`
+- `{{work_unix_start}}`
+- `{{work_unix_end}}`
+- `{{work_unix_next_start}}`
+- `{{work_unix_next_end}}`
+- `{{work_local_now}}`
 
 All values are editable and fully data-driven.
