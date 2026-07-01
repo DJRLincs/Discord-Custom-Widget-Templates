@@ -1,0 +1,31 @@
+{
+  "discord": {
+    "app_id": "YOUR_DISCORD_APP_ID",
+    "user_id": "YOUR_DISCORD_USER_ID",
+    "bot_token_env": "DISCORD_BOT_TOKEN",
+    "identity_id": 0
+  },
+  "widget": {
+    "display_name": "Live Example - Discord Custom Widget Templates",
+    "sync_timezone_label": "UTC",
+    "dynamic": [
+      { "type": 1, "name": "top_title", "value": "Discord Custom Widget Templates" },
+      { "type": 1, "name": "top_subtitle_1", "value": "Live example widget" },
+      { "type": 1, "name": "top_subtitle_2", "value": "github.com/DJRLincs/Discord-Custom-Widget-Templates" },
+      { "type": 1, "name": "top_subtitle_3", "value": "Copy this and edit it" },
+      { "type": 1, "name": "stat_1_label", "value": "Layouts" },
+      { "type": 1, "name": "stat_1_value", "value": "8" },
+      { "type": 1, "name": "stat_2_label", "value": "Configs" },
+      { "type": 1, "name": "stat_2_value", "value": "8" },
+      { "type": 1, "name": "stat_3_label", "value": "Examples" },
+      { "type": 1, "name": "stat_3_value", "value": "1" },
+      { "type": 1, "name": "stat_4_label", "value": "Docs" },
+      { "type": 1, "name": "stat_4_value", "value": "1" },
+      { "type": 1, "name": "stat_5_label", "value": "Uses" },
+      { "type": 1, "name": "stat_5_value", "value": "Profile" },
+      { "type": 1, "name": "stat_6_label", "value": "Mode" },
+      { "type": 1, "name": "stat_6_value", "value": "Live" },
+      { "type": 3, "name": "top_image_url", "value": { "url": "https://example.com/profile-header.png" } }
+    ]
+  }
+}

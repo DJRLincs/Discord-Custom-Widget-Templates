@@ -2,6 +2,10 @@
 
 Each file maps to a template in variants/.
 
+The `configs/*.example.json` files are the ones intended to be committed.
+Create a local copy without the `.example` suffix if you want to test or run
+personal values that should stay private.
+
 Use one of these approaches:
 
 1. Local run:
@@ -22,5 +26,9 @@ Use one of these approaches:
 
 - `configs/mini-profile-contained-stat.example.json`
 - `configs/mini-profile-hero-stat.example.json`
+
+## Example profile widget
+
+- `configs/live-example.example.json`
 
 All values are editable and fully data-driven.

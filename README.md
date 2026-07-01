@@ -10,6 +10,7 @@ This template is intentionally not tied to GitHub stats.
 
 ## References
 
+- This template repository: [DJRLincs/Discord-Custom-Widget-Templates](https://github.com/DJRLincs/Discord-Custom-Widget-Templates)
 - TheCreativeGod Discord widget extension: [TheCreativeGod/Discord-Widgets-Extension](https://github.com/TheCreativeGod/Discord-Widgets-Extension)
 - Discord widgets documentation:
   https://docs.discord.food/resources/widgets
@@ -41,6 +42,10 @@ Mini profile variants:
 - variants/mini-profile-contained-stat/
 - variants/mini-profile-hero-stat/
 
+Example profile widget:
+
+- variants/live-example/
+
 ## Quick start
 
 1. Fork or clone this folder as a new GitHub repository.
@@ -51,6 +56,31 @@ Mini profile variants:
    - DISCORD_APP_ID
    - DISCORD_USER_ID
 5. Enable .github/workflows/widget-sync.yml.
+
+If you want a starting point for your own profile, import the live example pack
+in `variants/live-example/` first. It is meant to be edited, reused, and copied
+as a reference for other people.
+
+## What should go in the repo
+
+Commit these:
+
+- `README.md`
+- `docs/`
+- `configs/*.example.json`
+- `variants/**/README.md`
+- `variants/**/widget-import-template.json`
+- `sync_widget.py`
+- `config.example.json`
+- `.github/workflows/*.yml`
+
+Keep these out of the repo:
+
+- `config.json` and any `*.local.json`
+- secrets, tokens, and personal Discord IDs
+- `__pycache__/` and `*.pyc`
+- generated runtime files in `generated/`
+- ad-hoc test exports unless you explicitly want them shared
 
 ## Fully dynamic templates
 
